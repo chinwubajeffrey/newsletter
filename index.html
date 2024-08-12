@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      </style>
+  </head>
+  <body>
+    <div class="container" style="display: flex;" id="container">
+    <div class="img">
+        <img
+          src="./assets/images/illustration-sign-up-mobile.svg"
+          alt=""
+          class="imga"
+        />
+        <img
+          src="./assets/images/illustration-sign-up-desktop.svg"
+          class="imgb"
+          alt=""
+        />
+      </div>
+
+      <div class="bigside">
+        <div class="side">
+          <div class="stay"><p>Stay updated!</p></div>
+
+          <div class="para">
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          </div>
+
+          <div class="box">
+            <div class="list">
+              <img src="./assets/images/icon-list.svg" alt="" />
+              <p class="listItem">
+                Product discovery and building what matters
+              </p>
+            </div>
+
+            <div class="list">
+              <img src="./assets/images/icon-list.svg" alt="" />
+              <p class="listItem">Measuring to ensure updates are a success</p>
+            </div>
+
+            <div class="list">
+              <img src="./assets/images/icon-list.svg" alt="" />
+              <p class="listItem">And much more!</p>
+            </div>
+          </div>
+
+          <form action="" onsubmit="validate(event)" name="myForm" id="form">
+            <div class="form">
+              <div class="label">
+                <label for="email" spellcheck="false">Email address</label>
+                <p id="errorMsg" class="errorMsg"></p>
+              </div>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="email@company.com"
+                
+              />
+            </div>
+          
+
+          <div class="">
+            <button class="button-one" type="submit" id="button">Subscribe to monthly newsletter</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="container-two" style="display: none;" id="container-two">
+    
+      <div class="card">
+          <div class="tick"><img src="../assets/images/icon-success.svg" alt="icon" width="15%"></div>
+          <div class="thank">Thanks for subscribing!</div>
+          <div class="message">
+              <p>A confirmation email has been sent to <b id="bold"></b>. Please open it and click the button inside to confirm your subscription</p>
+          </div>
+          <div class="email-2">
+              <button class="button-two" onclick="dismiss()" id="button-two">Dismiss message</button>
+          </div>
+      </div>
+  
+  </div>
+    <script src="./Js/script.js">
+
+    </script>
+  </body>
+</html>
+
+<!-- Sign-up form start -->
+
+<!-- Sign-up form end -->
+
+<!-- Success message start -->
+<!-- 
+Thanks for subscribing!
+
+A confirmation email has been sent to ash@loremcompany.com. 
+Please open it and click the button inside to confirm your subscription.
+
+Dismiss message -->
+
+<!-- Success message end -->

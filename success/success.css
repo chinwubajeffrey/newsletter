@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: roboto-bold;
+    src: url(../assets/fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: hsl(234, 29%, 20%);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20vw;
+    height: 40vh;
+    background: white;
+    border-radius: 2rem;
+    padding: 3rem;
+    font-family: roboto;
+}
+
+.thank{
+    font-size: 35px;
+    padding: 1rem 0;
+    font-family: roboto-bold;
+    color: hsl(234, 29%, 20%);
+}
+
+.message p{
+    font-size: 12px;
+}
+
+button{
+    margin: 1rem 0;
+    padding: 0.6rem;
+    font-family: roboto;
+    background: hsl(234, 29%, 20%);
+    color: aliceblue;
+    border-radius: 0.3rem;
+    width: 100%;
+    border: none;
+}
+
